@@ -1,7 +1,5 @@
 import { Link } from "react-router";
 import { Button } from "../components/Button";
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import heroImage from "figma:asset/7e50721096b0d8e991ffd3a2d0d5a2ae90df0a72.png";
 import {
   TrendingUp,
   Brain,
@@ -126,11 +124,8 @@ export default function Landing() {
       <section className="relative overflow-hidden">
         {/* Background footballer image with overlay */}
         <div className="absolute inset-0">
-          <ImageWithFallback 
-            src={heroImage}
-            alt="Football Action"
-            className="w-full h-full object-cover opacity-20"
-          />
+          {/* Background */}
+<div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background/90 to-secondary/10"></div>
           {/* Dark gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-background/90"></div>
         </div>
